@@ -1,0 +1,81 @@
+/* RainEffect.css */
+
+.rain-effect-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #001f3f, #005792);
+    z-index: 9999; /* Ensure it's on top of other elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  
+  .rain {
+    position: absolute;
+    top: -100px;
+    width: 2px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.7);
+    animation: rain-fall 1s linear infinite;
+  }
+  
+  .rain:nth-child(1) { left: 10%; animation-delay: 0s; }
+.rain:nth-child(2) { left: 20%; animation-delay: 0.2s; }
+.rain:nth-child(3) { left: 30%; animation-delay: 0.4s; }
+.rain:nth-child(4) { left: 40%; animation-delay: 0.6s; }
+.rain:nth-child(5) { left: 50%; animation-delay: 0.8s; }
+.rain:nth-child(6) { left: 60%; animation-delay: 1s; }
+.rain:nth-child(7) { left: 70%; animation-delay: 1.2s; }
+.rain:nth-child(8) { left: 80%; animation-delay: 1.4s; }
+.rain:nth-child(9) { left: 90%; animation-delay: 1.6s; }
+.rain:nth-child(10) { left: 95%; animation-delay: 1.8s; }
+
+
+  @keyframes rain-fall {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
+  .rain-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    position: relative;
+  }
+  
+  /* Blinking dots */
+  .dot {
+    animation: blink 1.5s infinite;
+    display: inline-block;
+  }
+  
+  .dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .dot:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  .dot:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  /* Blink animation */
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
