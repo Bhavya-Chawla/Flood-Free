@@ -1,4 +1,4 @@
-# Flood-Free
+# Flood-Free: Predicting Waterlogging in India Cities
 The solution approach for waterlogging prediction focuses on utilising machine learning to predict and mitigate waterlogging events in urban areas by analysing historical data alongside future forecast weather data.
 
 Waterlogging is a pervasive issue in urban areas, arising from a combination of heavy rainfall, inadequate drainage systems, and rapid urbanization. It is a problem with widespread consequences, disrupting transportation networks, damaging infrastructure, posing public health risks, and causing substantial economic losses. With climate change intensifying rainfall patterns and increasing urban densities putting further strain on existing infrastructure, the problem has taken on new urgency. Despite its far-reaching impacts, waterlogging remains under addressed, often tackled reactively rather than proactively, highlighting the need for innovative solutions.
